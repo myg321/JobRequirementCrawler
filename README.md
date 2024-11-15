@@ -15,7 +15,6 @@ JobRequirementCrawler 是一个基于 Python 的简单 web 应用项目，可以
 
 ![](https://picbed-toootu.oss-cn-wuhan-lr.aliyuncs.com/pics/202411152028729.png)
 
-
 ## 代码结构
 
 该项目包含以下主要文件：
