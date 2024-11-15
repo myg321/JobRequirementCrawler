@@ -1,0 +1,8 @@
+selenium
+beautifulsoup4
+jieba
+scikit-learn
+imageio
+wordcloud
+matplotlib
+streamlit
