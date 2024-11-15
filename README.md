@@ -13,9 +13,6 @@ JobRequirementCrawler 是一个基于 Python 的简单 web 应用项目，可以
 - 根据链接文件爬取每一个对应网页中的“任职要求”，并保存至本地
 - 数据清洗，提取关键词，并生成词云图
 
-![](https://picbed-toootu.oss-cn-wuhan-lr.aliyuncs.com/pics/202411152028729.png)
-
-
 ## 代码结构
 
 该项目包含以下主要文件：
