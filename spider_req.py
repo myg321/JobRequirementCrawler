@@ -7,11 +7,12 @@ from bs4 import BeautifulSoup
 # 配置选项
 options = webdriver.ChromeOptions()
 # 忽略证书错误
-options.add_argument('--ignore-certificate-errors')
-# 忽略 Bluetooth: bluetooth_adapter_winrt.cc:1075 Getting Default Adapter failed. 错误
-options.add_experimental_option('excludeSwitches', ['enable-automation'])
+# options.add_argument('--ignore-certificate-errors')
 # 忽略 DevTools listening on ws://127.0.0.1... 提示
 options.add_experimental_option('excludeSwitches', ['enable-logging'])
+# 无头模式
+options.add_argument('--headless=new')
+
 
 # 总函数
 def scrape_job_requirements(job_keyword):

@@ -87,12 +87,12 @@ def process_keywords(job_keyword, mask_path, font_name):
     # 提取关键词
     keywords = extract_keywords(data)
     
-    print('TF-IDF排名前100的：')
-    for i in range(100):
+    print('TF-IDF排名前150的：')
+    for i in range(150):
         print(keywords[i][0], keywords[i][1])
     
     # 生成词云
-    generate_wordcloud(keywords[:100], job_keyword, mask_path, font_name)
+    generate_wordcloud(keywords[:150], job_keyword, mask_path, font_name)
     print(f"词云已生成，已保存至 ./data/output_wordcloud/{job_keyword}.png")
 
 

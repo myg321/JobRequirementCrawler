@@ -83,7 +83,7 @@ def main():
                 process_keywords(job_keyword, st.session_state.save_path, font_option)
             st.success(f"词云已生成，请查看或保存。")
         else:
-            with st.spinner('正在爬取职位信息... 请稍等'):
+            with st.spinner('正在爬取职位信息... 约1.5h，耗时较长，可最小化本窗口做其他的事儿 :)'):
                 # 爬取职位链接
                 scrape_job_links(job_keyword)
 

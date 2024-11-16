@@ -3,20 +3,30 @@ import json
 from selenium import webdriver
 from bs4 import BeautifulSoup
 
+# 配置选项
+options = webdriver.ChromeOptions()
+# 无头模式
+options.add_argument('--headless=new')
+# 忽略证书错误
+# options.add_argument('--ignore-certificate-errors')
+# 忽略 DevTools listening on ws://127.0.0.1... 提示
+options.add_experimental_option('excludeSwitches', ['enable-logging'])
+
+
 # 爬取URL，总函数
 def scrape_job_links(job_keyword):
     with open('./data/cities.json', 'r', encoding='utf-8') as f:
         city_dict = json.load(f)
 
-    browser = webdriver.Chrome()  # 创建Chrome浏览器实例
+    browser = webdriver.Chrome(options=options)  # 创建Chrome浏览器实例
     all_links = []  # 存放一个职位所有链接
     link_50_count = 0  # 初始化计数器
 
     for city_name, city_code in city_dict.items():
         print(f"正在爬取{city_name}的{job_keyword} URL...")
 
-        # 爬取前5页的数据
-        for page_num in range(1, 6):
+        # 爬取前3页的数据
+        for page_num in range(1, 4):
             url = f"https://www.zhaopin.com/sou/jl{city_code}/kw{job_keyword}/p{page_num}"
             browser.get(url)
             time.sleep(3)   # 等待页面加载完成
