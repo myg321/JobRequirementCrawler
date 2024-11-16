@@ -81,7 +81,7 @@ def main():
             with st.spinner('正在生成词云... 请稍等'):
                 # 直接生成词云
                 process_keywords(job_keyword, st.session_state.save_path, font_option)
-            st.success(f"词云已生成，已保存至 ./data/output_wordcloud/{job_keyword}.png")
+            st.success(f"词云已生成，请查看或保存。")
         else:
             with st.spinner('正在爬取职位信息... 请稍等'):
                 # 爬取职位链接
@@ -96,7 +96,7 @@ def main():
                 # 生成关键词并生成词云
                 process_keywords(job_keyword, st.session_state.save_path, font_option)
 
-            st.success(f"爬取完成，词云已生成，已保存至 ./data/output_wordcloud/{job_keyword}.png")
+            st.success(f"爬取完成，词云已生成，请查看或保存。")
         
         wordcloud_path = f"./data/output_wordcloud/{job_keyword}.png"
         if os.path.exists(wordcloud_path):
