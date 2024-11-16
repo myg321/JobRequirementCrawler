@@ -2,8 +2,6 @@
 
 ![](https://picbed-toootu.oss-cn-wuhan-lr.aliyuncs.com/pics/202411152021688.png)
 
-**项目已部署，可通过 https://jobrequirementcrawler.streamlit.app/ 访问。**
-
 ## 简介
 
 JobRequirementCrawler 是一个基于 Python 的简单 web 应用项目，可以根据用户输入的职位名词，爬取并分析该职位的任职要求信息，并以可个性化的词云形式展示。
