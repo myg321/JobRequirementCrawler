@@ -2,6 +2,7 @@
 
 ![](https://picbed-toootu.oss-cn-wuhan-lr.aliyuncs.com/pics/202411152021688.png)
 
+**项目已部署，可通过 https://jobrequirementcrawler.streamlit.app/ 访问。**
 
 ## 简介
 
