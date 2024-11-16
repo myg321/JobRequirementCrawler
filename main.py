@@ -40,7 +40,7 @@ def main():
     
     st.markdown("<br>", unsafe_allow_html=True)
 
-    # 字体选择（所列字体均为我本地PC中字体）
+    # 字体选择（可根据 ./data/fonts 文件夹中进行 font_option 的修改）
     font_option = st.selectbox("选择词云字体", ("PingFangSC-Medium.otf", "PingFangSC-Light.otf", "PingFangSC-Semibold.otf", "HYZhengYuan-55W.ttf", "MiSans VF.ttf", 
                                             "OPPOSans-B.ttf", "OPPOSans-L.ttf", "OPPOSans-R.ttf", "HarmonyOS_Sans_SC_Thin.ttf", "HarmonyOS_Sans_SC_Medium.ttf", "HarmonyOS_Sans_SC_Black.ttf"), index=0)
     st.markdown("<br>", unsafe_allow_html=True)

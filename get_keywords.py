@@ -43,8 +43,8 @@ def extract_keywords(data):
 def generate_wordcloud(keywords, job_keyword, mask_path, font_name):
     words = " ".join([kw[0] for kw in keywords])
     mask = imread(mask_path) 
-    os.environ['FONT_PATH'] = r'C:\Users\Joseph\AppData\Local\Microsoft\Windows\Fonts'  # 系统字体文件夹
-    font_path = os.path.join(os.environ['FONT_PATH'], font_name)
+    font_path = './data/fonts' 
+    font_path = os.path.join(font_path, font_name)
 
     wc = WordCloud(
         scale=4,
